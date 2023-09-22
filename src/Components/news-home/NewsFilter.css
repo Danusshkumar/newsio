@@ -1,0 +1,291 @@
+/* Light Theme */
+.app.light {
+	background-color: #f7f7f7;
+	color: #333;
+  }
+  
+  .app.light .navbar {
+	background-color: #007bff;
+	color: white;
+  }
+  
+  .app.light .navbar a {
+	color: white;
+	transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .app.light .navbar a:hover {
+	background-color: #0056b3;
+  }
+  
+  .app.light .news-filter-container {
+	background-color: #292b2c;
+	color: white;
+	padding: 20px;
+	border-bottom: 1px solid #ddd;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  }
+  
+  .app.light .theme-toggle-button {
+	background-color: transparent;
+	color: white;
+	transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .app.light .theme-toggle-button:hover {
+	background-color: #444;
+  }
+  
+  .app.light .news-item {
+	background-color: white;
+	color: #333;
+	border-radius: 5px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	padding: 15px;
+	margin-bottom: 20px;
+	transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+  }
+  
+  .app.light .news-item:hover {
+	background-color: #f4f4f4;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Dark Theme */
+  .app.dark {
+	background-color: #333;
+	color: #f5f5f5;
+  }
+  
+  .app.dark .navbar {
+	background-color: #343a40;
+	color: white;
+  }
+  
+  .app.dark .navbar a {
+	color: white;
+	transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .app.dark .navbar a:hover {
+	background-color: #1d2124;
+  }
+  
+  .app.dark .news-filter-container {
+	background-color: #555;
+	color: white;
+	padding: 20px;
+	border-bottom: 1px solid #444;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  }
+  
+  .app.dark .theme-toggle-button {
+	background-color: transparent;
+	color: white;
+	transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .app.dark .theme-toggle-button:hover {
+	background-color: #444;
+  }
+  
+  .app.dark .news-item {
+	background-color: #444;
+	color: #f5f5f5;
+	border-radius: 5px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	padding: 15px;
+	margin-bottom: 20px;
+	transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+  }
+  
+  .app.dark .news-item:hover {
+	background-color: #333;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Navbar styles */
+  .navbar {
+	overflow: hidden;
+	display: flex;
+	background-color: transparent;
+  }
+  
+  .navbar a {
+	display: block;
+	float : left;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	border-radius: 5px;
+	margin-right: 10px;
+  }
+  
+  .navbar a:hover {
+	background-color: #ddd;
+	color: #000;
+  }
+  
+  /* Container for category selector */
+  .news-filter-container h2 {
+	margin: 0;
+	font-size: 24px;
+  }
+  
+  .news-filter-container select,
+  .news-filter-container input[type="text"] {
+	padding: 8px;
+	font-size: 16px;
+	border-radius: 5px;
+	margin-right: 10px;
+  }
+  
+  /* News article grid */
+  .news-list {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+	padding: 20px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .news-item {
+	border: 1px solid #ccc;
+	padding: 10px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+  }
+  
+  .news-item h3 {
+	margin-top: 0;
+	font-size: 18px;
+  }
+  
+  .news-item p {
+	margin: 8px 0;
+  }
+  
+  /* Theme toggle button */
+  .theme-toggle-button {
+	background-color: #333;
+	color: white;
+	border: none;
+	padding: 8px 16px;
+	font-size: 16px;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-right: 10px;
+  }
+  
+  .theme-toggle-button:hover {
+	background-color: #555;
+  }
+  
+  /* Read More and Speak buttons */
+  .button,
+  .speak-button {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin-top: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+  }
+  
+  .button:hover,
+  .speak-button:hover {
+	background-color: #45a049;
+  }
+  
+  /* News item details */
+  .news-item-details {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 10px;
+  }
+  
+  /* News item actions */
+  .news-item-actions {
+	display: flex;
+	align-items: center;
+  }
+  
+  /* Move the Speak button to the right */
+  .news-item-actions .speak-button {
+	margin-left: auto;
+	margin-right: 0;
+  }
+  /* ... Rest of your existing CSS ... */
+
+/* Carousel styles */
+.carousel-container {
+	margin-top: 20px;
+	max-height: 300px; /* Adjust the maximum height as needed */
+  }
+  
+  .carousel-container .carousel .slider-wrapper {
+	border-radius: 5px;
+	overflow: hidden;
+	max-height: 300px; /* Adjust the maximum height as needed */
+  }
+  
+  .carousel-container .carousel .slider-wrapper .slider {
+	transition: transform 0.5s ease;
+  }
+  
+  .carousel-container .carousel .slider-wrapper .slider .slide {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #ccc;
+  }
+  
+  .carousel-container .carousel .slider-wrapper .slider .slide img {
+	max-height: 100%;
+	width: auto;
+	margin: 0 auto;
+  }
+
+  .live-tv-btn {
+	padding : 10px 15px;
+	border-radius: 10px;
+	font-weight: bold;
+	background-color : white;
+	cursor: pointer;
+  }
+
+
+  .red-dot {
+	border-radius : 10px;
+	height : 10px;
+	width : 10px;
+	background-color : red;
+	display: inline-block;
+  }
+
+  .dot-space {
+	display: inline-block;
+	width : 10px;
+  }
+
+  .account-icon {
+	height : 30px;
+	width : 30px;
+  }
+  
+  
+  /* Weather menu */
+  /* ... Previous weather menu styles ... */
+  

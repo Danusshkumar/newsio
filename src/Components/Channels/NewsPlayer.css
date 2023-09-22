@@ -1,0 +1,29 @@
+/* src/App.css */
+.app {
+  text-align: center;
+  padding: 20px;
+}
+
+.news-player {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tv-news-ui {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.tv-channels {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.news-channel-img {
+  height : 300px;
+  width: 300px;
+}
